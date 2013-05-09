@@ -1,20 +1,93 @@
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC>
 
 <html>
 <head>
   <title>Bizlogistix</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag    "/app/assets/stylesheets/application.css", :media => "all" %>
+  <%= stylesheet_link_tag    "/stylesheets/application.css" %>
+  <%= javascript_include_tag "/app/assets/javascripts/application.js" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<%= link_to 'Home', '/home' %>
-	<%= link_to 'About', '/about' %>
-	<%= link_to 'Contact us', '/contact_us' %>
-<%= yield %>
+<div class="wrapper">
+	<div id="headertop">
+		1.800.788.7277&emsp;|&emsp;Support&emsp;|&emsp;Chat&emsp;|&emsp;Login
+	</div>
+	<div id="header"></div>
+	<table width="1000px">
+		<tr>
+			<td width="300px"></td>
+			<td><div id="topnav"><%= link_to 'Home', '/home' %></div></td>
+			<td><div id="topnav"><%= link_to 'About', '/about' %></div></td>
+			<td><div id="topnav"><%= link_to 'Contact us', '/contact_us' %></div></td>
+			<td><div id="topnav"><%= link_to 'Contact us', '/contact_us' %></div></td>
+			<td><div id="topnav"><%= link_to 'Contact us', '/contact_us' %></div></td>
+			
+		</tr>
+	</table>
+	<%= yield %>
 
+
+
+
+	<div id="footer">
+			<table width="1000px" valign="top"><tr>
+				<td width="290px" border="1px" align="center" valign="top">
+				<!--<div id="followus">Sign up for Newsletter</div>
+				    <form name="MailingList" method="post" action="Config_FullStoreURLMailingList_subscribe.asp">  
+          			  <input type="text" id="elist_input" name="emailaddress" value="enter email address" onfocus="if (this.value == 'enter email address') {this.value = '';}" onblur="if (this.value == '') {this.value = 'enter email address';}" /> 
+            				<input type="submit" name="Submit" id="elist_submit" value="Submit" />
+            			</form>
+            		-->
+				</td>
+				
+				<td width="170px" border="1px" align="left" valign="top">
+				<div id="footercontent"><b>Company</b></div>
+				<div id="footercontent"><a href="indextest.php?page=about_us">About Us</a></div>
+				<div id="footercontent">Contact Us</div>
+				<div id="footercontent">Privacy policies</div>
+				</td>
+				
+				<td width="170px" border="1px" align="left" valign="top">
+				<div id="footercontent"><b>Customer service</b></div>
+				<div id="footercontent">Tour planner</div>
+				<div id="footercontent">Services offered</div>
+				<div id="footercontent">Check availability</div>
+				</td>
+				
+				<td width="170px" border="1px" align="left" valign="top">
+				<div id="footercontent"><b>Quick links</b></div>
+				<div id="footercontent">About coorg</div>
+				<div id="footercontent">Tourist attractions</div>
+				<div id="footercontent">Help</div>
+				</td>
+				
+				<td width="200px" border="1px" align="center" valign="top">
+				<div id="followus">Follow Us</div>
+				<div id="blank"></div>
+					<table valign="top" align="center"><tr valign="top">
+						<td>
+						<a href=""><div id="facebook"></div></a>
+						</td>
+
+						<td>
+						<a href=""><div id="tweeter"></div></a>
+						</td>
+						<td>
+						<a href=""><div id="linkdln"></div></a></td>
+						
+						</tr></table>
+				
+				</td>
+				
+			</tr></table>
+			
+			<div id="footerbottom">Copyright © 2013 BizLogisticx. All Rights Reserved.</div
+
+		</div>
+
+</div>
 </body>
 </html>

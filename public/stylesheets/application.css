@@ -1,0 +1,256 @@
+
+
+
+body {
+color: #2c2c2c;
+margin: 0;
+padding: 0;
+background: #e7ffdc url(/images/bg_02.png) center 0 repeat-y;
+font-family: "OpenSansRegular", Arial, Helvetica, sans-serif;
+font-size: 13px;
+}
+
+
+*{
+margin: 0px;
+padding: 0px
+}
+
+
+.wrapper{
+width:1000px;
+border: 0px solid #e1e1e1;
+margin: 10px auto 0 auto;
+}
+
+#topnav a{
+	
+	padding-right: 30px;
+height: 30px;
+color:#585858;
+font-family: Helvetica Neue, Arial, sans-serif;
+font-size:17px;
+line-height:18px;
+text-align:center;
+font-weight: bold;
+top:11px;
+letter-spacing: 0.1em;
+
+}
+
+
+#header{
+background:url('/images/bizlogisticxlogo.png') no-repeat;
+background-size:250px;   
+margin-left:10px;
+height:70px;
+width:300px;
+
+}
+
+#headerTop{
+width: 1000px;
+height: 18px;
+color:#646464;
+font-family: Helvetica Neue, Arial, sans-serif;
+font-size:12px;
+line-height:18px;
+text-align:right;	
+top:11px;
+}
+
+
+#footerbottom{
+padding-top:17px;
+font-size:10px;
+font-family: Helvetica Neue, Arial, sans-serif;
+text-align:center;
+color:#646464;
+}
+
+#footer{
+width:1000px;
+min-height:120px;
+color:#646464;
+border-top: 2px solid #2a79be;
+}
+
+#footercontent{
+min-width: 170px;
+padding-top:5px;
+min-height:15px;
+font-size:12px;
+font-family: Helvetica Neue, Arial, sans-serif;
+text-align:left;
+color:#646464;
+}
+
+#footercontent a{
+min-width: 170px;
+padding-top:5px;
+min-height:15px;
+font-size:12px;
+font-family: Helvetica Neue, Arial, sans-serif;
+text-align:left;
+color:#646464;
+text-decoration:none;
+}
+
+#footercontent a:hover{
+min-width: 170px;
+padding-top:5px;
+min-height:15px;
+font-size:12px;
+font-family: Helvetica Neue, Arial, sans-serif;
+text-align:left;
+color:#646464;
+text-decoration:none;
+}
+
+#facebook{
+background:transparent url(../images/facebook.gif) no-repeat;
+background-size:28px;
+width:38px;
+height:38px;
+}
+
+#facebook:hover{
+background:url(../images/facebookh.gif) no-repeat;
+padding-top:10px;
+background-size:28px;
+width:38px;
+height:38px;
+}
+
+
+#tweeter{
+background:url(../images/tweeter.gif) no-repeat;
+padding-top:10px;
+background-size:28px;
+width:38px;
+height:38px;
+}
+
+#tweeter:hover{
+background:url(../images/tweeterh.gif) no-repeat;
+padding-top:10px;
+background-size:28px;
+width:38px;
+height:38px;
+}
+
+#linkdln{
+background:url(../images/linkdln.gif) no-repeat;
+padding-top:10px;
+background-size:28px;
+width:38px;
+height:38px;
+}
+
+#linkdln:hover{
+background:url(../images/linkdlnh.gif) no-repeat;
+padding-top:10px;
+background-size:28px;
+width:38px;
+height:38px;
+}
+
+#followus{
+padding-top:5px;
+min-height:15px;
+font-size:12px;
+font-family: Helvetica Neue, Arial, sans-serif;
+text-align:center;
+color:#646464;
+font-weight:bold;
+
+}
+#newsletter{
+padding-top:5px;
+min-height:15px;
+font-size:12px;
+font-family: Helvetica Neue, Arial, sans-serif;
+text-align:left;
+color:#646464;
+font-weight:bold;
+
+}
+
+
+#eList{
+float:left;
+margin-left:35px;
+width:190px;
+}
+
+
+#eList .title{text-indent:3px;}
+#eList form{
+margin:0;
+padding:0;
+width:100%;
+}
+
+
+#elist_input{
+background:url(../images/elistInputBg.gif) no-repeat 0 0;
+border:none;
+color:#999;
+display:block;
+font:normal 11px Helvetica Neue, Arial, sans-serif;
+margin:0 0 8px;
+padding:5px 10px 3px;
+text-align:left;	
+width:168px;
+}
+
+
+#elist_submit {
+background:url(../images/elistSubmitBg.gif) no-repeat 0 0;
+border:none;
+color:#b9b8b4;
+cursor:pointer;
+display:block;	
+font-size:0;
+height:30px;	
+margin:0;
+padding:0;
+text-align:left;
+text-indent:-9999px;
+width:77px;
+}
+
+a{
+text-decoration:none;
+}
+
+
+/*
+#header{
+background:url('/images/logo.jpg') no-repeat;
+background-size:1000px;   
+margin-left:75px;
+height:100px;
+width:1000px;
+font-size: 15px;
+font-style: bold;
+font-family: verdana;
+border: 2px solid #73beff;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+*/
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
