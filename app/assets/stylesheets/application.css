@@ -1,15 +1,88 @@
+lib/assets
 
 
+
+/*########################################################## Home page css begin ###########################################################*/
+#homeinto{
+background-image: linear-gradient(bottom, rgb(80,165,250) 37%, rgb(51,153,255) 50%);
+background-image: -o-linear-gradient(bottom, rgb(80,165,250) 37%, rgb(51,153,255) 50%);
+background-image: -moz-linear-gradient(bottom, rgb(80,165,250) 37%, rgb(51,153,255) 50%);
+background-image: -webkit-linear-gradient(bottom, rgb(80,165,250) 37%, rgb(51,153,255) 50%);
+background-image: -ms-linear-gradient(bottom, rgb(80,165,250) 37%, rgb(51,153,255) 50%);
+font-family: "Helvetica", Arial, Helvetica, sans-serif;
+font-size: 13px;
+border: 0px solid #eaeafb;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+}
+
+#homeintotd{
+width:333px;
+font-family: "Helvetica", Arial, Helvetica, sans-serif;
+font-size: 13px;
+border-left: 0px solid #eaeafb;
+border-top: 0px solid #eaeafb;
+border-bottom: 0px solid #eaeafb;
+border-right: 2px solid #eaeafb;
+
+}
+
+#homeintotdright{
+width:333px;
+font-family: "Helvetica", Arial, Helvetica, sans-serif;
+font-size: 13px;
+border-left: 0px solid #eaeafb;
+border-top: 0px solid #eaeafb;
+border-bottom: 0px solid #eaeafb;
+border-right: 0px solid #eaeafb;
+}
+
+
+#homebannertext{	
+color:#ffffff;
+font-family: Helvetica Neue, Arial, sans-serif;
+font-size:17px;
+line-height:18px;
+text-align:center;
+font-weight: bold;
+top:11px;
+letter-spacing: 0.1em;
+}
+
+#hometilestyle{
+background-color: #ffffff;
+border: 1px solid #f1f1f1;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;	
+}
+
+#hometiletext{	
+color:#646464;
+font-family: Helvetica Neue, Arial, sans-serif;
+font-size:17px;
+line-height:18px;
+text-align:center;
+font-weight: bold;
+top:11px;
+letter-spacing: 0.1em;
+}
+
+
+
+/*########################################################## Home page css end ###########################################################*/
+
+/*########################################################## application css begin ###########################################################*/
 
 body {
 color: #2c2c2c;
 margin: 0;
 padding: 0;
-background: #e7ffdc url(/images/bg_02.png) center 0 repeat-y;
+background: #eaeafb url(/images/bg_02.png) center 0 repeat-y;
 font-family: "OpenSansRegular", Arial, Helvetica, sans-serif;
 font-size: 13px;
 }
-
 
 *{
 margin: 0px;
@@ -25,7 +98,7 @@ margin: 10px auto 0 auto;
 
 #topnav a{
 	
-	padding-right: 30px;
+padding-right: 30px;
 height: 30px;
 color:#585858;
 font-family: Helvetica Neue, Arial, sans-serif;
@@ -72,7 +145,7 @@ color:#646464;
 width:1000px;
 min-height:120px;
 color:#646464;
-border-top: 2px solid #2a79be;
+border-top: 2px solid #3399ff;
 }
 
 #footercontent{
@@ -224,7 +297,7 @@ a{
 text-decoration:none;
 }
 
-
+/*########################################################## application css end ###########################################################*/
 /*
 #header{
 background:url('/images/logo.jpg') no-repeat;
