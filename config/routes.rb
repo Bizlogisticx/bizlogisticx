@@ -5,6 +5,10 @@ Bizlogistix::Application.routes.draw do
   match '/about' => 'homes#about'
   match '/home' => 'homes#index'
   match '/contact_us' => 'homes#contact'
+  match '/features' => 'homes#features'
+  match '/pricing' => 'homes#pricing'
+  match '/company' => 'homes#company'
+  match '/services' => 'homes#services'
 
 
   # The priority is based upon order of creation:

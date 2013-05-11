@@ -5,9 +5,10 @@
 <html>
 <head>
   <title>Bizlogistix</title>
-  <%= stylesheet_link_tag    "/app/assets/stylesheets/application.css", :media => "all" %>
-  <%= stylesheet_link_tag    "/stylesheets/application.css" %>
+  <%= stylesheet_link_tag    "/stylesheets/application.css", :media => "all" %>
+ 
   <%= javascript_include_tag "/app/assets/javascripts/application.js" %>
+  <link rel="shortcut icon" href="/favicon.ico"/>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -18,15 +19,16 @@
 	<div id="header"></div>
 	<table width="1000px">
 		<tr>
-			<td width="300px"></td>
+			<td width="350px"></td>
 			<td><div id="topnav"><%= link_to 'Home', '/home' %></div></td>
-			<td><div id="topnav"><%= link_to 'About', '/about' %></div></td>
-			<td><div id="topnav"><%= link_to 'Contact us', '/contact_us' %></div></td>
-			<td><div id="topnav"><%= link_to 'Contact us', '/contact_us' %></div></td>
-			<td><div id="topnav"><%= link_to 'Contact us', '/contact_us' %></div></td>
+			<td><div id="topnav"><%= link_to 'Features', '/features' %></div></td>
+			<td><div id="topnav"><%= link_to 'Services', '/services' %></div></td>
+			<td><div id="topnav"><%= link_to 'Pricing', '/pricing' %></div></td>
+			<td><div id="topnav"><%= link_to 'Company', '/company' %></div></td>
 			
 		</tr>
 	</table>
+	<br>
 	<%= yield %>
 
 
