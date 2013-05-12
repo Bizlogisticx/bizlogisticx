@@ -30129,3 +30129,28 @@ Started GET "/" for 127.0.0.1 at 2013-05-12 14:24:47 -0400
 Processing by HomesController#index as HTML
   Rendered homes/index.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-12 18:40:22 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 127ms (Views: 125.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-12 18:41:29 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-12 18:42:00 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-12 18:42:24 -0400
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
