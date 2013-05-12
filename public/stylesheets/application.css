@@ -76,7 +76,30 @@ margin-top: 20px;
 background:url('/images/freetrialstrip.png') no-repeat;
 background-size:280px;   
 margin-left:20px;
-margin-top: 20px;	
+margin-top: 5px;	
+}
+
+#laptop_background{
+background:url('/images/laptop_background.png') no-repeat;
+background-size:335px;   
+width: 330px;
+height: 120px;
+margin-left:8px;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+
+#homebannerlaptopwrite{
+margin-left: 170px;
+padding-top: 0px;	
+color:#ffffff;
+font-family: "Helvetica", Arial, Helvetica, sans-serif;
+font-size: 14px;
+line-height:26px;
+text-align:left;
+font-weight: bold;
+top:11px;
+letter-spacing: 0.1em;
 }
 
 #homebannertrialtwrite{
@@ -93,7 +116,7 @@ letter-spacing: 0.1em;
 }
 
 .shadow_dark {
-text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+text-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
 
