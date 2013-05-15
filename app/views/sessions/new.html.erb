@@ -1,0 +1,11 @@
+<% if flash[:notice] %>
+	<%= flash[:notice] %>
+<% elsif flash.now[:alert] %>
+	<%= flash.now[:alert] %>
+<% end %>
+
+<h1>User Login</h1>
+
+<%= render 'form' %>
+
+<!--<%= link_to 'Back', users_path %>-->

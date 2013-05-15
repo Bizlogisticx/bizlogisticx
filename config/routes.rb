@@ -1,5 +1,12 @@
 Bizlogistix::Application.routes.draw do
   
+  
+  match '/sign_up' => 'users#new'
+  match '/users/my_account' => 'users#account'
+  resources :users
+  get '/users' => 'users#index'
+
+
   root :to => 'homes#index'
   resources :homes
   match '/about' => 'homes#about'
@@ -9,6 +16,12 @@ Bizlogistix::Application.routes.draw do
   match '/pricing' => 'homes#pricing'
   match '/company' => 'homes#company'
   match '/services' => 'homes#services'
+
+  match '/login' => 'sessions#new'
+  match '/logout' => 'sessions#destroy'
+  resources :sessions
+
+  match '/users/#{:id}/set_admin' => 'users#adminify'
 
 
   # The priority is based upon order of creation:

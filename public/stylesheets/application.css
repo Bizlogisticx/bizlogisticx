@@ -1,146 +1,14 @@
 
-#lab_des_writeup{
-padding-left: 15px;
-padding-right: 15px;
-padding-top: 3px;
-font-size: 10pt;
-font-family: "Arial", Helvetica Neue, Arial, sans-serif;
-color: #646464;
-text-align: justify;
-font-weight: normal;
-letter-spacing: 0em;
-line-height: 17px;
-}
 
-
-
-#toggle{
-width:170px;
-}
-
-#description { 
-display:block;
-}
-
-#procedure {
-display:none; 
-}
-
-#sample_submission { 
-display:none;
-}
-
-
-#activecell{
-background:url('/images/active.png') no-repeat;
-background-size:170px;  
-font-weight:bold;
-cursor: pointer;
-border:1px solid #ffffff;
-line-height: 35px;
-height: 35px;
-padding-left: 15px;
-font-size: 10pt;
-font-family: "Helvetica", Arial, Helvetica, sans-serif;
-text-align: left;
-text-valign: middle;
-letter-spacing: 0em;
-color: #ffffff;
-}
-
-
-#inactivecell{
-background:url('/images/inactive.png') no-repeat;
-background-size:170px;   
-font-weight:bold;
-cursor: pointer;
-border:1px solid #ffffff;
-height: 35px;
-line-height: 35px;
-padding-left: 15px;
-font-size: 10pt;
-font-family: "Helvetica", Arial, Helvetica, sans-serif;
-text-align: left;
-text-valign: middle;
-letter-spacing: 0em;
-color: #454545;
-}
-
-#inactivecell:hover{
-background:url('/images/inactive.png') no-repeat;
-background-size:170px;   
-font-weight:bold;
-line-height: 35px;
-cursor: pointer;
-border:1px solid #ffffff;
-height: 35px;
-padding-left: 15px;
-font-size: 10pt;
-font-family: "Helvetica", Arial, Helvetica, sans-serif;
-text-align: left;
-text-valign: middle;
-letter-spacing: 0em;
-color: #0578c7;
-}
-
-#featurestyle{
-background-color: #ffffff;
-border: 1px solid #f1f1f1;
--webkit-border-radius: 15px;
--moz-border-radius: 15px;
-border-radius: 15px;	
-}
-
-#featurestylehead{
-background-image: linear-gradient(bottom, #3399ff 37%, #0099ff 50%);
-background-image: -o-linear-gradient(bottom, #3399ff 37%, #0099ff 50%);
-background-image: -moz-linear-gradient(bottom, #3399ff 37%, #0099ff 50%);
-background-image: -webkit-linear-gradient(bottom, #3399ff 37%, #0099ff 50%);
-background-image: -ms-linear-gradient(bottom, #3399ff 37%, #0099ff 50%);
-font-family: "Helvetica", Arial, Helvetica, sans-serif;
-font-size: 13px;
-border: 0px solid #eaeafb;
-border-bottom-left-radius: 0px;
-border-bottom-right-radius: 0px;
-border-top-right-radius:15px;
-border-top-left-radius:15px;
-}
-
-#featuretexthead{
-padding-left: 150px;
-padding-top: 30px;	
-color:#ffffff;
-font-family: "Helvetica", Arial, Helvetica, sans-serif;
-font-size: 30px;
-line-height:18px;
-text-align:left;
-font-weight: bold;
-top:11px;
-letter-spacing: 0.1em;
-}
-
-
-#featuretextheadbottom{
-padding-left: 100px;
-padding-top: 20px;	
-color:#ffffff;
-font-family: "Helvetica", Arial, Helvetica, sans-serif;
-font-size: 20px;
-line-height:18px;
-text-align:left;
-font-weight: bold;
-top:11px;
-letter-spacing: 0.1em;
-}
 
 
 /*########################################################## Home page css begin ###########################################################*/
 #homeinto{
-background-image: linear-gradient(bottom, #3399ff 37%, #0099ff 50%);
-background-image: -o-linear-gradient(bottom, #3399ff 37%, #0099ff 50%);
-background-image: -moz-linear-gradient(bottom, #3399ff 37%, #0099ff 50%);
-background-image: -webkit-linear-gradient(bottom, #3399ff 37%, #0099ff 50%);
-background-image: -ms-linear-gradient(bottom, #3399ff 37%, #0099ff 50%);
+background-image: linear-gradient(bottom, rgb(80,165,250) 37%, rgb(51,153,255) 50%);
+background-image: -o-linear-gradient(bottom, rgb(80,165,250) 37%, rgb(51,153,255) 50%);
+background-image: -moz-linear-gradient(bottom, rgb(80,165,250) 37%, rgb(51,153,255) 50%);
+background-image: -webkit-linear-gradient(bottom, rgb(80,165,250) 37%, rgb(51,153,255) 50%);
+background-image: -ms-linear-gradient(bottom, rgb(80,165,250) 37%, rgb(51,153,255) 50%);
 font-family: "Helvetica", Arial, Helvetica, sans-serif;
 font-size: 13px;
 border: 0px solid #eaeafb;
@@ -150,7 +18,7 @@ border-radius: 15px;
 }
 
 #homeintotd{
-width:33%;
+width:333px;
 font-family: "Helvetica", Arial, Helvetica, sans-serif;
 font-size: 13px;
 border-left: 0px solid #eaeafb;
@@ -161,7 +29,7 @@ border-right: 2px solid #eaeafb;
 }
 
 #homeintotdright{
-width:33%;
+width:333px;
 font-family: "Helvetica", Arial, Helvetica, sans-serif;
 font-size: 13px;
 border-left: 0px solid #eaeafb;
@@ -185,7 +53,7 @@ letter-spacing: 0.1em;
 }
 
 #homebannerbulletwrite{
-padding-left: 30px;
+padding-left: 35px;
 padding-top: 0px;	
 color:#ffffff;
 font-family: "Helvetica", Arial, Helvetica, sans-serif;
@@ -200,7 +68,7 @@ letter-spacing: 0.1em;
 #arrowbullet{
 background:url('/images/arrowbullet.png') no-repeat;
 background-size:30px;   
-margin-left:10px;
+margin-left:20px;
 margin-top: 20px;	
 }
 
@@ -213,24 +81,13 @@ margin-top: 5px;
 
 #laptop_background{
 background:url('/images/laptop_background.png') no-repeat;
-background-size:328px;   
-width: 322px;
+background-size:335px;   
+width: 330px;
 height: 120px;
 margin-left:8px;
 margin-top: 30px;
 margin-bottom: 20px;
 }
-
-#artwork_background{
-background:url('/images/artwork_background.png') no-repeat;
-background-size:332px;   
-width: 322px;
-height: 120px;
-margin-left:8px;
-margin-top: 30px;
-margin-bottom: 20px;
-}
-
 
 #homebannerlaptopwrite{
 margin-left: 170px;
@@ -271,34 +128,13 @@ border: 1px solid #f1f1f1;
 border-radius: 15px;	
 }
 
-#hometiletexthead{
-	width: 280px;
-padding-top: 15px;
-padding-bottom: 10px;
-padding-left: 15px;
-padding-right: 15px;
-color: #ffffff;
-color:#808080;
+#hometiletext{	
+color:#646464;
 font-family: Helvetica Neue, Arial, sans-serif;
 font-size:17px;
 line-height:18px;
-text-align:left;
+text-align:center;
 font-weight: bold;
-letter-spacing: 0.1em;
-}
-
-#hometiletext{	
-color:#646464;
-width: 280px;
-font-family: Helvetica Neue, Arial, sans-serif;
-padding-top: 3px;
-padding-bottom: 3px;
-padding-left: 15px;
-padding-right: 15px;
-font-size:13px;
-line-height:18px;
-text-align:left;
-font-weight: normal;
 top:11px;
 letter-spacing: 0.1em;
 }
@@ -316,7 +152,6 @@ padding: 0;
 background: #eaeafb url(/images/bg_02.png) center 0 repeat-y;
 font-family: "OpenSansRegular", Arial, Helvetica, sans-serif;
 font-size: 13px;
-align: center;
 }
 
 *{
@@ -325,15 +160,15 @@ padding: 0px
 }
 
 
-#wrapper{
+.wrapper{
 width:1000px;
 border: 0px solid #e1e1e1;
-margin: 0px auto 0 auto;
-align: center;
+margin: 10px auto 0 auto;
 }
 
 #topnav a{
-margin-right: 30px;
+	
+padding-right: 30px;
 height: 30px;
 color:#585858;
 font-family: Helvetica Neue, Arial, sans-serif;

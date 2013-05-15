@@ -1,0 +1,11 @@
+<% if @user %>
+	<h1>My Account</h1>
+
+	Email: <%= @user.email %>
+	</br>
+	<% if admin? %>
+	Admin status: Administrator
+	<% end %>
+	<br/>
+	<%= link_to 'Change Password', edit_user_path(@user) %>
+<% end %>
