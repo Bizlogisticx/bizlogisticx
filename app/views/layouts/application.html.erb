@@ -39,10 +39,10 @@
                							 <li id="zero" ><a href="#"><% if session[:user_id] %>
 											<%= link_to 'My account', '/users/my_account' %>
 											<% end %></a></li></br>
-											<li><a href="#"><% if session[:user_id] %><%=link_to ' Logout', '/logout' %><% end %></a></li><br>
               							  <li id="zero" ><a href="#"><% if admin? %>
 										   <%= link_to 'Access User database', users_path %><br/>
 											<% end %></a></li>
+										  <li><a href="#"><% if session[:user_id] %><%=link_to ' Logout', '/logout' %><% end %></a></li><br>
             						</ul>
             
        							</div>              
