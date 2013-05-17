@@ -1,12 +1,3 @@
-$('#toggle > div').click(function() {
-    var ix = $(this).index();
-    $('#description').toggle( ix === 0 );
-    $('#procedure').toggle( ix === 1 );
-    $('#sample_submission').toggle( ix === 2 );
-   
-});
-
-
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //

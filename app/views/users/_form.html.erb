@@ -1,34 +1,39 @@
 <%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+  
 
-      <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
+  <% if !@user.id || session[:email] == @user.email %>
+  <% if !@user.id %>
+  <div class="field">
+    <%= f.label 'First Name' %><br />
+    <%= f.text_field :first %>
+  </div>
+  <div class="field">
+    <%= f.label 'Last Name' %><br />
+    <%= f.text_field :last %>
+  </div>
+  <% else %>
+    <%= f.label "Name" %><br />
+    <%= @user.first %>
+    <%= @user.last %>
   <% end %>
-
-  <% if session[:email] == @user.email %>
   <div class="field">
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </div>
   <% else %>
-    <%= f.label :email %><br />
-    <%= @user.email %>
+    <%= f.label "Name" %><br />
+    <%= @user.first %>
+    <%= @user.last %>
   <% end %>
 
   <% if admin? %>
   <div class="field">
-    <%= f.label :admin %><br />
+    <%= f.label :admin_status %><br />
     <%= f.text_field :admin %>
   </div>
   <% end %>
 
-  <% if session[:email] == @user.email %>
+  <% if !@user.id || session[:email] == @user.email %>
   <div class="field">
     <%= f.label :password %><br />
     <%= f.password_field :password %>
@@ -39,7 +44,7 @@
   </div>
   <% end %>
 
-  <% if !session[:user_id] %>
+  <% if !@user.id %>
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
