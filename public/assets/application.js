@@ -1,4 +1,18 @@
-﻿$('#toggle > div').click(function() {
+﻿
+    $(document).ready(function() {
+        $(".dropdown").hover(
+            function(){
+                $(this).children("div.sub-menu").slideDown(200);
+            },
+            function(){
+                $(this).children("div.sub-menu").slideUp(200);
+            }
+        );
+    });
+
+
+
+$('#toggle > div').click(function() {
     var ix = $(this).index();
     $('#description').toggle( ix === 0 );
     $('#procedure').toggle( ix === 1 );

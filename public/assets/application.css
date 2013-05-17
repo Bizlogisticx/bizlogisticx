@@ -1,3 +1,92 @@
+#loginstyle { 
+    color:#646464;
+    font-size:11px;
+    font-weight:bold;
+    text-decoration:none;
+    padding-top: 2px; 
+}
+
+
+#loginposition{
+position:absolute;
+left:1083px;
+top:5px;
+}
+
+a.dropdown-link { 
+    font-family: "Helvetica", Arial, Helvetica, sans-serif;
+    color:#646464;
+    font-size:11px;
+    font-weight:bold;
+    text-decoration:none; 
+}
+
+ul#quotes-bar-menu {
+    margin: 0; padding: 0;
+    width: 100%;
+    list-style: none;
+    font-size: 1.1em;
+}
+
+ul#quotes-bar-menu li {
+    display:inline;
+    position:relative;
+    margin:0;
+    padding:7px 15px 7px 0;
+}
+
+/* sub menu class */
+ul#quotes-bar-menu li .sub-menu {
+    font-family: "Helvetica", Arial, Helvetica, sans-serif;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    background:none repeat scroll 0 0 #ECF3F9;
+    border-color:-moz-use-text-color #C3D3E1 #C3D3E1;
+    border-right:0px solid #C3D3E1;
+    border-style:none solid solid;
+    border-width:medium 0px 0px;
+    display:none;
+    font-size:11px;
+    left:0;
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:24px;
+    width:150px;
+    z-index:999;
+    text-align: left;
+}
+
+#zero{
+
+    padding-top:0px; 
+    margin-top:0px;
+}
+
+ul#quotes-bar-menu li .single { 
+    width:150px !important;
+}
+
+ul#quotes-bar-menu li .sub-menu h2 {
+    font-weight:bold;
+    color:#646464;
+    text-shadow: 0px 1px #fff;
+}
+
+ul#quotes-bar-menu li .sub-menu ul {
+    width:160px;
+    margin:7px 0;
+}
+
+ul#quotes-bar-menu li .sub-menu li {
+    width:135px;
+    margin:0; 
+    padding:5px 10px 0;
+}
+
+ul#quotes-bar-menu li .sub-menu li a { color: #646464; text-decoration: none; font-size: 11px; line-height: 20px;}
+ul#quotes-bar-menu li .sub-menu li a:hover { text-decoration: underline; font-size: 11px; }
+/*#############################################*/
 
 #lab_des_writeup{
 padding-left: 15px;
@@ -346,10 +435,14 @@ letter-spacing: 0.1em;
 
 }
 
+#blank{
+    height: 10px;
+}
 
 #header{
 background:url('/assets/bizlogisticxlogo.png') no-repeat;
-background-size:250px;   
+background-size:250px;  
+margin-top: 0px; 
 margin-left:10px;
 height:70px;
 width:300px;
@@ -357,14 +450,16 @@ width:300px;
 }
 
 #headerTop{
-width: 1000px;
+position:absolute;
+left:850px;
+top:0px;
 height: 18px;
 color:#646464;
 font-family: Helvetica Neue, Arial, sans-serif;
 font-size:12px;
 line-height:18px;
 text-align:right;	
-top:11px;
+top:5px;
 }
 
 
