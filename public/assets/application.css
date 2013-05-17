@@ -52,7 +52,7 @@ ul#quotes-bar-menu li .sub-menu {
     padding:0;
     position:absolute;
     top:24px;
-    width:120px;
+    width:100px;
     z-index:999;
     text-align: left;
 }
