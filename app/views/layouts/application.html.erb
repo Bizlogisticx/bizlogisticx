@@ -11,22 +11,55 @@
   <link rel="shortcut icon" href="/favicon.ico"/>
 </head>
 <body>
-<div class="wrapper">
-	<div id="headertop">
-		1.800.788.7277&emsp;|&emsp;Support&emsp;|&emsp;Chat&emsp;|&emsp;
-		<% if session[:user_id] == nil %>
-			<%=link_to 'Sign up', '/sign_up'%> or <%=link_to 'Login', '/login'%>
-		<% else %>
-			Hello, <%=session[:first] %>! <%=link_to ' Logout', '/logout' %>
-		<% end %><br />
-		<% if admin? %>
-			<%= link_to 'Access User database', users_path %><br/>
-		<% end %>
-		<% if session[:user_id] %>
-			<%= link_to 'My account', '/users/my_account' %>
-		<% end %>
-	</div>
-	<div id="header"></div>
+<div id="wrapper">
+
+<div id="blank"></div>
+<div id="blank"></div>
+		<div id="headertop">
+			
+				1.800.788.7277&emsp;|&emsp;Support&emsp;|&emsp;Chat&emsp;|
+				
+</div>
+<div id="loginposition">
+				<ul id="quotes-bar-menu">
+   
+        							<a class="dropdown-link" href="#">
+  										  <% if session[:user_id] == nil %>
+											<div id="loginstyle"><%=link_to 'Sign up', '/sign_up'%> or <%=link_to 'Login', '/login'%></div>
+	
+											<% else %>
+							<li class="dropdown">
+											Logged in as <%=session[:email] %>
+											<% end %>
+									</a>
+       							 <div class="sub-menu" style="margin-top:0px;">
+          							  <ul id="zero" >
+               							 <li id="zero" ><a href="#"><% if session[:user_id] %>
+											<%= link_to 'My account', '/users/my_account' %>
+											<% end %></a></li></br>
+              							  <li><a href="#"><% if session[:user_id] %><%=link_to ' Logout', '/logout' %><% end %></a></li>
+            						</ul>
+            
+       							</div>              
+  		 					 </li>
+   
+				</ul>
+	
+	
+
+
+</div>
+
+<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.js"></script>  
+ <script src="/assets/application.js"></script>  
+
+
+
+
+
+
+
+	<a href="/home"><div id="header"></div></a>
 	<table width="1000px">
 		<tr>
 			<td width="350px"></td>
@@ -96,7 +129,7 @@
 				
 			</tr></table>
 			
-			<div id="footerbottom">Copyright © 2013 BizLogisticx. All Rights Reserved.</div
+			<div id="footerbottom">Copyright Â© 2013 BizLogisticx. All Rights Reserved.</div
 
 		</div>
 

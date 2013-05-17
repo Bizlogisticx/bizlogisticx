@@ -2,17 +2,15 @@
 
 <table>
   <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
     <th>Email</th>
     <th>Admin</th>
+    <th></th>
+    <th></th>
     <th></th>
   </tr>
 
 <% @users.each do |user| %>
   <tr>
-    <td><%= user.first %></td>
-    <td><%= user.last %></td>
     <td><%= user.email %></td>
     <td><% if user.admin %> Administrator <% else %> Non-Administrator <% end %></td>
     <td><%= link_to 'Show', user %></td>
