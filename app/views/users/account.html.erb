@@ -1,5 +1,8 @@
+<% if flash[:notice] %>
+	<%= flash[:notice] %>
+<% end %>
 <% if @user %>
-	<h1>My Account</h1>
+	<h2>My Account</h2>
 	Name: <%= @user.first %> <%= @user.last %><br/>
 	Email: <%= @user.email %>
 	</br>
