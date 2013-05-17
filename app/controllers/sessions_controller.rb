@@ -11,6 +11,7 @@ class SessionsController < ApplicationController
   def create
   	@user = User.find_by_email(params[:email])
 	if @user
+		session[:first] = @user.first
 		session[:email] = @user.email
 		if @user.authenticate(params[:password])
 			session[:user_id] = @user.id
@@ -25,6 +26,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+  	session[:first] = nil
   	session[:user_id] = nil
 	session[:email] = nil
 	redirect_to '/login', notice: 'You have logged out of your account!'

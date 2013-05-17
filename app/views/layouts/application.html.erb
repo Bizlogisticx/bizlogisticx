@@ -20,6 +20,8 @@
 				1.800.788.7277&emsp;|&emsp;Support&emsp;|&emsp;Chat&emsp;|
 				
 </div>
+
+
 <div id="loginposition">
 				<ul id="quotes-bar-menu">
    
@@ -29,13 +31,16 @@
 	
 											<% else %>
 							<li class="dropdown">
-											Logged in as <%=session[:email] %>
+											Hello <%=session[:first] %>
 											<% end %>
 									</a>
        							 <div class="sub-menu" style="margin-top:0px;">
           							  <ul id="zero" >
                							 <li id="zero" ><a href="#"><% if session[:user_id] %>
 											<%= link_to 'My account', '/users/my_account' %>
+											<% end %></a></li></br>
+											<li id="zero" ><a href="#"><% if admin? %>
+											<%= link_to 'Access User database', users_path %><br/>
 											<% end %></a></li></br>
               							  <li><a href="#"><% if session[:user_id] %><%=link_to ' Logout', '/logout' %><% end %></a></li>
             						</ul>
@@ -59,6 +64,7 @@
 
 
 
+
 	<a href="/home"><div id="header"></div></a>
 	<table width="1000px">
 		<tr>
@@ -73,7 +79,6 @@
 	</table>
 	<br>
 	<%= yield %>
-
 
 
 
