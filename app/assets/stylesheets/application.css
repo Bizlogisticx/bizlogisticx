@@ -1,7 +1,6 @@
 
 
 
-
 /*########################################################## Home page css begin ###########################################################*/
 #homeinto{
 background-image: linear-gradient(bottom, rgb(80,165,250) 37%, rgb(51,153,255) 50%);
@@ -14,7 +13,7 @@ font-size: 13px;
 border: 0px solid #eaeafb;
 -webkit-border-radius: 15px;
 -moz-border-radius: 15px;
-border-radius:15px;
+border-radius: 15px;
 }
 
 #homeintotd{
