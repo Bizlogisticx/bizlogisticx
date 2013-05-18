@@ -61890,3 +61890,123 @@ Served asset /homes.js - 304 Not Modified (1ms)
 
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-18 15:34:17 -0400
 Served asset /jquery.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/my_account" for 127.0.0.1 at 2013-05-18 17:00:50 -0400
+Processing by UsersController#account as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'boji.220@gmail.com' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'boji.220@gmail.com' LIMIT 1
+  Rendered users/account.html.erb within layouts/application (11.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'boji.220@gmail.com' LIMIT 1[0m
+Completed 200 OK in 228ms (Views: 108.1ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-18 17:00:50 -0400
+Served asset /jquery.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-18 17:00:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2013-05-18 17:00:51 -0400
+Served asset /homes.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/down.png" for 127.0.0.1 at 2013-05-18 17:00:51 -0400
+Served asset /down.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/active.png" for 127.0.0.1 at 2013-05-18 17:00:51 -0400
+Served asset /active.png - 304 Not Modified (8ms)
+
+
+Started GET "/assets/inactive.png" for 127.0.0.1 at 2013-05-18 17:00:51 -0400
+Served asset /inactive.png - 304 Not Modified (5ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-05-18 17:01:17 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-05-18 17:01:17 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/_form.html.erb (11.0ms)
+  Rendered sessions/new.html.erb within layouts/application (24.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2013-05-18 17:01:17 -0400
+Served asset /homes.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-18 17:01:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-18 17:01:17 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-05-18 17:01:25 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AYKMSItlIfjMiVyuJurVI9gO43tgDUbPcnmA7ffmzWc=", "email"=>"boji.220@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'boji.220@gmail.com' LIMIT 1[0m
+Redirected to http://localhost:3000/users/my_account
+Completed 302 Found in 197ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/my_account" for 127.0.0.1 at 2013-05-18 17:01:25 -0400
+Processing by UsersController#account as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'boji.220@gmail.com' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'boji.220@gmail.com' LIMIT 1[0m
+  Rendered users/account.html.erb within layouts/application (2.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'boji.220@gmail.com' LIMIT 1
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-18 17:01:25 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-18 17:01:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2013-05-18 17:01:25 -0400
+Served asset /homes.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/down.png" for 127.0.0.1 at 2013-05-18 17:01:25 -0400
+Served asset /down.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/inactive.png" for 127.0.0.1 at 2013-05-18 17:01:27 -0400
+Served asset /inactive.png - 304 Not Modified (0ms)
+
+
+Started GET "/features" for 127.0.0.1 at 2013-05-18 17:01:44 -0400
+Processing by HomesController#features as HTML
+  Rendered homes/features.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'boji.220@gmail.com' LIMIT 1[0m
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-18 17:01:44 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-18 17:01:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2013-05-18 17:01:44 -0400
+Served asset /homes.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/down.png" for 127.0.0.1 at 2013-05-18 17:01:45 -0400
+Served asset /down.png - 304 Not Modified (0ms)
