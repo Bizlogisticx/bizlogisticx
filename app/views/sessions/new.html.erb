@@ -1,11 +1,15 @@
+
+
+
+
+<div id="pagetexthead">Customer login</div>
+<br>
+<%= render 'form' %>
+<div id="blank"></div>
 <% if flash[:notice] %>
 	<%= flash[:notice] %>
 <% elsif flash.now[:alert] %>
 	<%= flash.now[:alert] %>
 <% end %>
-
-<h1>User Login</h1>
-
-<%= render 'form' %>
-
+<div id="blank"></div>
 <!--<%= link_to 'Back', users_path %>-->

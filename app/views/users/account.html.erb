@@ -1,14 +1,66 @@
-<% if flash[:notice] %>
-	<%= flash[:notice] %>
+
+
+<table id="featurestyle" width="1000px" height="200px">
+  <tr>
+      <td valign="top">
+
+
+<div id="description"> 
+  <table>
+      <tbody>
+        <tr>
+         <td> 
+              <div id="toggle"> <div id="activecell">Web design</div><div id="inactivecell">Marketing</div></div> 
+          </td>
+          <td width="160px"> 
+
+
+          							<% if @user %>
+									<div id="pagetexthead">My Account</div>
+									Name: <%= @user.first %><%= @user.last %><br/>
+									Email: <%= @user.email %>
+									</br>
+									<% if admin? %>
+									Admin status: Administrator
+									<% end %>
+									<br/>
+									<%= link_to 'Change Password', edit_user_path(@user) %>
 <% end %>
-<% if @user %>
-	<h2>My Accountsz</h2>
-	Name: <%= @user.first %> <%= @user.last %><br/>
-	Email: <%= @user.email %>
-	</br>
-	<% if admin? %>
-	Admin status: Administrator
-	<% end %>
-	<br/>
-	<%= link_to 'Change Password', edit_user_path(@user) %>
-<% end %>
+
+
+          </td> 
+
+        </tr>
+          </tbody>
+  </table> 
+</div>
+
+
+
+
+<div id="procedure" >
+  <table>
+      <tbody>
+        <tr>
+         <td> 
+              <div id="toggle" ><div id="inactivecell">Web design</div><div id="activecell">Marketing</div></div> 
+          </td>
+          <td width="160px"> second
+          </td> 
+
+        </tr>
+          </tbody>
+  </table> 
+</div>
+
+
+
+ <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.js"></script>  
+ <script src="/assets/application.js"></script>  
+
+<br>
+
+
+ </td>
+</tr>
+</table>

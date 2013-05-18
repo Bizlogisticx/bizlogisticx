@@ -1,3 +1,69 @@
+
+#TextHeadFormSmall{
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px;
+padding-bottom: 3px;
+font-size: 10pt;
+font-family: "Arial", Helvetica Neue, Arial, sans-serif;
+color: #646464;
+text-align: justify;
+font-weight: normal;
+letter-spacing: 0em;
+line-height: 12px;
+}
+
+
+
+#submit:hover{
+background-color:#0578c7;
+width: 100px;
+height: 25px;
+border: 0px solid #73beff;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+ font-size: 11pt;
+padding-top: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+font-family: "Arial", Helvetica Neue, Arial, sans-serif;
+color: #ffffff;
+text-align: center;
+text-valign: middle;
+font-weight: bold;
+letter-spacing: 0.1em;
+}
+
+#submit{
+background-color:#328ed5;
+width: 100px;
+height: 25px;
+border: 0px solid #73beff;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+ font-size: 11pt;
+padding-top: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+font-family: "Arial", Helvetica Neue, Arial, sans-serif;
+color: #ffffff;
+text-align: center;
+text-valign: middle;
+font-weight: bold;
+letter-spacing: 0.1em;
+}
+
+
+#submit_alignmain{
+padding-left: 20px;
+}
+
+
+
+/*################################## login drop down begin ####################*/
+
 #loginstyle { 
     color:#646464;
     font-size:11px;
@@ -86,7 +152,7 @@ ul#quotes-bar-menu li .sub-menu li {
 
 ul#quotes-bar-menu li .sub-menu li a { color: #646464; text-decoration: none; font-size: 11px; line-height: 20px;}
 ul#quotes-bar-menu li .sub-menu li a:hover { text-decoration: underline; font-size: 11px; }
-/*#############################################*/
+/*##################################login drop down end ###########*/
 
 #lab_des_writeup{
 padding-left: 15px;
@@ -222,6 +288,22 @@ top:11px;
 letter-spacing: 0.1em;
 }
 
+/*########################################################## all page page css begin ###########################################################*/
+
+#pagetexthead{
+padding-left: 10px;
+padding-top: 5px;  
+color:#3399ff;
+font-family: "Helvetica", Arial, Helvetica, sans-serif;
+font-size: 22px;
+line-height:18px;
+text-align:left;
+font-weight: bold;
+top:11px;
+letter-spacing: 0.1em;
+}
+
+/*########################################################## all page page css end ###########################################################*/
 
 /*########################################################## Home page css begin ###########################################################*/
 #homeinto{

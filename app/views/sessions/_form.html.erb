@@ -1,5 +1,14 @@
+
+<table id="featurestyle" width="1000px" height="200px">
+  <tr>
+      <td valign="top">
+        
 <%= form_tag sessions_path do |f| %>
   
+  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag "/assets/application.css" , :media => "all" %>
+
+  <%= csrf_meta_tags %>
 
   <div class="field">
     <%= label_tag :email %><br />
@@ -9,7 +18,16 @@
     <%= label_tag :password %><br />
     <%= password_field_tag :password %>
   </div>
+  <div id="blank"></div>
   <div class="actions">
-    <%= submit_tag "Login" %>
+    <div id="submit_alignmain">
+    <%= submit_tag "Login", :id=> "submit"  %>
   </div>
+  </div>
+
 <% end %>
+
+ </td>
+</tr>
+</table>
+
