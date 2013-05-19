@@ -1,4 +1,33 @@
 ﻿
+    //Attach events to menu
+
+ var make_button_active = function()
+    {
+      //Get item siblings
+      var siblings =($(this).siblings());
+      //Remove active class on all buttons
+      siblings.each(function (index)
+        {
+          $(this).removeClass('active');
+        }
+      );
+      
+      
+      //Add the clicked button class
+      $(this).addClass('active');
+    }   
+     
+     $(document).ready(function() {
+    $(".myaccountmenu li").click(make_button_active);
+});
+
+  
+
+
+
+
+
+
     $(document).ready(function() {
         $(".dropdown").hover(
             function(){
@@ -10,6 +39,15 @@
         );
     });
 
+
+
+$('#myaccounttoggle > li').click(function() {
+    var ix = $(this).index();
+    $('#accountinformation').toggle( ix === 0 );
+    $('#personalinformation').toggle( ix === 1 );
+    $('#tickets').toggle( ix === 2 );
+   
+});
 
 
 $('#toggle > div').click(function() {

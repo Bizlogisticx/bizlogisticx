@@ -1,15 +1,33 @@
 
+<table id="featurestyle" width="1000px" height="200px">
+  <tr>
+      <td valign="top">
+<table id="myaccounttablehead" width="1000px" height="60px">
+  <tr>
+    <td width="300px">
+      <div id="pagetexthead">Customer login</div>
+    </td>
+<td width="400px">
+     
+</td >
+<td width="300px">
+  </td>
+</table>
 
-
-
-<div id="pagetexthead">Customer login</div>
 <br>
 <%= render 'form' %>
-<div id="blank"></div>
+<div id="errorflash">
 <% if flash[:notice] %>
 	<%= flash[:notice] %>
 <% elsif flash.now[:alert] %>
 	<%= flash.now[:alert] %>
 <% end %>
-<div id="blank"></div>
+</div>
 <!--<%= link_to 'Back', users_path %>-->
+
+ </td>
+</tr>
+</table>
+
+
+

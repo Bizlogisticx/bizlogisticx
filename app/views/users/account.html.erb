@@ -1,68 +1,125 @@
-<% if flash[:notice] %>
-<%= flash[:notice] %>
-<% end %>
 
 <table id="featurestyle" width="1000px" height="200px">
   <tr>
       <td valign="top">
+       
+<table id="myaccounttablehead" width="1000px" height="60px">
+  <tr>
+    <td width="300px">
+      <div id="pagetexthead">My Account</div>
+    </td>
+<td width="400px">
+       <% if flash[:notice] %>
+        <%= flash[:notice] %>
+      <% end %>
+</td>
+<td width="300px">Account number:
+  </td>
+</table>
+<br>
+<table border="0px" height="200px" valign="top">
+  <tr valign="top">
+    <td>
+        <ul class="myaccountmenu">
+           <div id="myaccounttoggle">
+              <li class="active">Account information</li>
+              <li>Personal information</li>
+              <li>Tickets</li>
+           </div>
+         </ul>
+    </td>
+    <td width="100px">
+    </td>
+    <td>
+          <div id="accountinformation">   
+          
+          <table id="myaccounttable" width="700px" >
+            <tr >
+              <td width="150px" >User login
+              </td>
+              <td width="350px"><% if @user %><%= @user.email %><% end %> 
+              </td>
+              <td width="240px"><% if admin? %>Administrator<% end %>
+              </td>
+            </tr>
+          </table>
+       
+
+           <table id="myaccounttable" width="700px" >
+               <tr>
+              <td width="150px" >Password
+              </td>
+              <td width="350px">********
+              </td>
+              <td width="240px"><% if @user %><%= link_to 'Change Password', edit_user_path(@user) %><% end %> 
+              </td>
+            </tr>
+          </table>
+          </div>
+
+      <div id="personalinformation"> 
+
+          <table id="myaccounttable" width="700px" >
+            <tr >
+              <td width="150px" >First name
+              </td>
+              <td width="350px"><% if @user %><%= @user.first %><% end %> 
+              </td>
+              <td width="240px">
+              </td>
+            </tr>
+          </table>
+         
+           <table id="myaccounttable" width="700px" >
+               <tr>
+              <td width="150px" >Last name
+              </td>
+              <td width="350px"><% if @user %><%= @user.last %><% end %> 
+              </td>
+              <td width="240px">
+                </td>
+            </tr>
+          </table>
+
+           <table id="myaccounttable" width="700px" >
+            <tr >
+              <td width="150px" >Email ID
+              </td>
+              <td width="350px"><% if @user %><%= @user.email %><% end %> 
+              </td>
+              <td width="240px"><% if admin? %>Administrator<% end %>
+              </td>
+            </tr>
+          </table>
+
+       </div>
+
+      <div id="tickets"> Tiket information here
+       </div>
+    </td>
+  </tr>
+</table>
 
 
-<div id="description"> 
-  <table>
-      <tbody>
-        <tr>
-         <td> 
-              <div id="toggle"> <div id="activecell">Web design</div><div id="inactivecell">Marketing</div></div> 
-          </td>
-          <td width="160px"> 
 
-
-          							<% if @user %>
-									<div id="pagetexthead">My Account</div>
-									Name: <%= @user.first %><%= @user.last %><br/>
-									Email: <%= @user.email %>
-									</br>
-									<% if admin? %>
-									Admin status: Administrator
-									<% end %>
-									<br/>
-									<%= link_to 'Change Password', edit_user_path(@user) %>
-<% end %>
-
-
-          </td> 
-
-        </tr>
-          </tbody>
-  </table> 
-</div>
+ 
 
 
 
 
-<div id="procedure" >
-  <table>
-      <tbody>
-        <tr>
-         <td> 
-              <div id="toggle" ><div id="inactivecell">Web design</div><div id="activecell">Marketing</div></div> 
-          </td>
-          <td width="160px"> second
-          </td> 
 
-        </tr>
-          </tbody>
-  </table> 
-</div>
+
+ 
 
 
 
  <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.js"></script>  
  <script src="/assets/application.js"></script>  
 
-<br>
+
 
 
  </td>
 </tr>
 </table>
+<br>

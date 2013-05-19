@@ -1,5 +1,31 @@
-<h1>User Sign up</h1>
-
+<table id="featurestyle" width="1000px" height="200px">
+  <tr>
+      <td valign="top">
+<table id="myaccounttablehead" width="1000px" height="60px">
+  <tr>
+    <td width="300px">
+      <div id="pagetexthead">New user sign up</div>
+    </td>
+<td width="400px">
+    
+</td >
+<td width="300px">
+  </td>
+</table>
+<br>
 <%= render 'form' %>
 
+<div id="errorflash">
+<% if flash[:notice] %>
+	<%= flash[:notice] %>
+<% elsif flash.now[:alert] %>
+	<%= flash.now[:alert] %>
+<% end %>
+</div>
+
 <!--<%= link_to 'Back', users_path %>-->
+<div id="blank"></div>
+ </td>
+</tr>
+</table>
+

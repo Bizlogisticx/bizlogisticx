@@ -1,7 +1,5 @@
 
-<table id="featurestyle" width="1000px" height="200px">
-  <tr>
-      <td valign="top">
+
         
 <%= form_tag sessions_path do |f| %>
   
@@ -11,23 +9,21 @@
   <%= csrf_meta_tags %>
 
   <div class="field">
-    <%= label_tag :email %><br />
-    <%= text_field_tag :email %>
+    <div id="TextHeadFormSmall"><%= label_tag :email %><br /></div>
+    <%= text_field_tag :email, nil, :class=>'textareaform' %>
   </div>
   <div class="field">
-    <%= label_tag :password %><br />
-    <%= password_field_tag :password %>
+    <div id="TextHeadFormSmall"> <%= label_tag :password %><br /></div>
+    <%= password_field_tag :password , nil, :class=>'textareaform' %>
   </div>
-  <div id="blank"></div>
   <div class="actions">
     <div id="submit_alignmain">
     <%= submit_tag "Login", :id=> "submit"  %>
   </div>
-  </div>
+ </div>
 
-<% end %>
+ <% end %>
 
- </td>
-</tr>
-</table>
+  <div id="blank"></div>
+
 

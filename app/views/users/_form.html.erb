@@ -1,15 +1,21 @@
 <%= form_for(@user) do |f| %>
   
+  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag "/assets/application.css" , :media => "all" %>
+
+  <%= csrf_meta_tags %>
+
+
 
   <% if !@user.id || session[:email] == @user.email %>
   <% if !@user.id %>
   <div class="field">
-    <%= f.label 'First Name' %><br />
-    <%= f.text_field :first %>
+    <div id="TextHeadFormSmall"><%= f.label 'First Name' %><br /></div>
+    <%= f.text_field :first, :class=>'textareaform' %>
   </div>
   <div class="field">
-    <%= f.label 'Last Name' %><br />
-    <%= f.text_field :last %>
+   <div id="TextHeadFormSmall"> <%= f.label 'Last Name' %><br /></div>
+    <%= f.text_field :last, :class=>'textareaform' %>
   </div>
   <% else %>
     <%= f.label "Name" %><br />
@@ -17,8 +23,8 @@
     <%= @user.last %>
   <% end %>
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
+    <div id="TextHeadFormSmall"><%= f.label :email %><br /></div>
+    <%= f.text_field :email, :class=>'textareaform' %>
   </div>
   <% else %>
     <%= f.label "Name" %><br />
@@ -35,22 +41,24 @@
 
   <% if !@user.id || session[:email] == @user.email %>
   <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
+   <div id="TextHeadFormSmall"> <%= f.label :password %><br /></div>
+    <%= f.password_field :password, :class=>'textareaform' %>
   </div>
   <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
+    <div id="TextHeadFormSmall"><%= f.label :password_confirmation %><br /></div>
+    <%= f.password_field :password_confirmation, :class=>'textareaform' %>
   </div>
   <% end %>
 
   <% if !@user.id %>
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <div id="submit_alignmain">
+    <%= f.submit "Sign up", :id=> "submit" %>
   </div>
   <% else %>
     <div class="actions">
     <%= f.submit "Edit" %>
   </div>
+</div>
   <% end %>
 <% end %>
