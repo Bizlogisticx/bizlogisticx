@@ -1,9 +1,6 @@
 <%= form_for(@user) do |f| %>
   
-  <%= javascript_include_tag "application" %>
-  <%= stylesheet_link_tag "/assets/application.css" , :media => "all" %>
-
-  <%= csrf_meta_tags %>
+  
 
 
 
@@ -32,7 +29,7 @@
     <%= @user.last %>
   <% end %>
 
-  <% if admin? %>
+  <% if admin? && @user.email != session[:email] %>
   <div class="field">
     <%= f.label :admin_status %><br />
     <%= f.text_field :admin %>
