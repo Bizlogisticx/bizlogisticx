@@ -1,6 +1,12 @@
 Bizlogistix::Application.routes.draw do
   
   
+  get "reset_password/password"
+
+  get "reset_password/password_create"
+
+  get "confirmation/confirm"
+
   match '/sign_up' => 'users#new'
   match '/users/my_account' => 'users#account'
   resources :users
@@ -21,7 +27,15 @@ Bizlogistix::Application.routes.draw do
   match '/logout' => 'sessions#destroy'
   resources :sessions
 
-  match '/users/#{:id}/set_admin' => 'users#adminify'
+  match '/users/:id/confirm_account/:confirmation_token' => 'users#confirm_email'
+  match '/reconfirm_account' => 'confirmation#resend'
+  match '/confirmation' => 'confirmation#resend_create'
+  resource :confirmation
+
+  match '/users/:id/reset_password/:confirmation_token' => 'users#reset_password'
+  match '/forgot_password' => 'reset_password#password'
+  match '/forgot' => 'reset_password#password_create'
+  resource :reset_password
 
 
   # The priority is based upon order of creation:

@@ -1,0 +1,14 @@
+<%= form_tag (confirmation_path) do %>
+  
+  <div class="field">
+    <div id="TextHeadFormSmall"><%= label_tag :email %><br /></div>
+    <%= text_field_tag :email, nil, :class=>'textareaform' %>
+  </div>
+
+  <div class="actions">
+    <div id="submit_alignmain">
+    <%= submit_tag "Send email", :id=> "submit" %>
+  </div>
+</div>
+
+<% end %>

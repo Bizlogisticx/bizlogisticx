@@ -1,0 +1,14 @@
+<%= form_tag ('/forgot') do %>
+  
+  <div class="field">
+    <div id="TextHeadFormSmall"><%= label_tag :email %><br /></div>
+    <%= text_field_tag :email, nil, :class=>'textareaform' %>
+  </div>
+
+  <div class="actions">
+    <div id="submit_alignmain">
+    <%= submit_tag "Reset password" %>
+  </div>
+</div>
+
+<% end %>

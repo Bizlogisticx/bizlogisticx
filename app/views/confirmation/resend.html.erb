@@ -1,0 +1,9 @@
+<% if flash.now %>
+	<%= flash.now[:alert] %>
+<% end %>
+
+<h1>Resend confirmation email</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', '/login' %>

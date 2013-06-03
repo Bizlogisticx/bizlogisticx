@@ -18,5 +18,9 @@
 <% end %>
 
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', :back %>
+<%= link_to 'Edit', edit_user_path(@user) %>
+<% if admin? %>
+	<%= link_to 'Back', "#{session[:prev]}" %>
+<% else%>
+	<%= link_to 'Back', '/users/my_account' %>
+<% end %>

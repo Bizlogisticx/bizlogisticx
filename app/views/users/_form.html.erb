@@ -1,10 +1,15 @@
 <%= form_for(@user) do |f| %>
   
-  
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
 
-
-
-  <% if !@user.id || session[:email] == @user.email %>
   <% if !@user.id %>
   <div class="field">
     <div id="TextHeadFormSmall"><%= f.label 'First Name' %><br /></div>
@@ -14,19 +19,17 @@
    <div id="TextHeadFormSmall"> <%= f.label 'Last Name' %><br /></div>
     <%= f.text_field :last, :class=>'textareaform' %>
   </div>
-  <% else %>
-    <%= f.label "Name" %><br />
-    <%= @user.first %>
-    <%= @user.last %>
-  <% end %>
   <div class="field">
     <div id="TextHeadFormSmall"><%= f.label :email %><br /></div>
     <%= f.text_field :email, :class=>'textareaform' %>
   </div>
+  
   <% else %>
     <%= f.label "Name" %><br />
     <%= @user.first %>
-    <%= @user.last %>
+    <%= @user.last %></br>
+    <%= f.label 'Email' %></br>
+    <%= @user.email %>
   <% end %>
 
   <% if admin? && @user.email != session[:email] %>
@@ -54,7 +57,7 @@
   </div>
   <% else %>
     <div class="actions">
-    <%= f.submit "Edit" %>
+    <%= f.submit "Edit user" %>
   </div>
 </div>
   <% end %>
