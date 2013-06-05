@@ -9,7 +9,7 @@ class UserMailer < ActionMailer::Base
 
   def reset_password(user)
   	@user = user
-  	@url = "http://localhost:3000/users/:id/reset_password/:confirmation_token" #edit_user_url(@user, :host => "localhost:3000")
+  	@url = "http://localhost:3000/users/#{@user.id}/reset_password/#{@user.confirmation_token}" #edit_user_url(@user, :host => "localhost:3000")
   	mail(to: @user.email, subject: 'Reset your Bizlogistix.com password')
   end
 end

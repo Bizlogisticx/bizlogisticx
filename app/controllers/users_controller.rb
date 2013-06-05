@@ -118,17 +118,19 @@ class UsersController < ApplicationController
   end
 
   def reset_password
-    @user = User.find_by_email(session[:email])
+    @user = User.find(params[:id])
     if @user && params[:confirmation_token] == @user.confirmation_token
       @user.confirmation_token = nil
       if @user.save
-        redirect_to "reset_password_path(@user)"
+        session[:email] = @user.email
+        redirect_to edit_user_path(@user)
       else
         redirect_to '/home', notice: 'User could not be saved!'
       end
+    elsif session[:email]
+      redirect_to '/users/my_account', notice: 'Link does not exist!'
     else
-      flash.now[:alert] = 'Password reset failed! Please try again.'
-      render '/login'
+      redirect_to '/login', notice: "Password reset failed! Please try again."
     end
   end
 
